@@ -14,7 +14,7 @@ class Settings:
 
     google_api_key: str
     tavily_api_key: str
-    model_name: str = "gemini-1.5-flash"
+    model_name: str = "gemini-2.5-flash"
     max_iterations: int = 3
     tavily_max_results: int = 5
     log_level: str = "INFO"
@@ -58,7 +58,7 @@ def load_settings() -> Settings:
     return Settings(
         google_api_key=_read_required_env("GOOGLE_API_KEY"),
         tavily_api_key=_read_required_env("TAVILY_API_KEY"),
-        model_name=os.getenv("MODEL_NAME", "gemini-1.5-flash"),
+        model_name=os.getenv("MODEL_NAME", "gemini-2.5-flash"),
         max_iterations=_read_int_env("MAX_ITERATIONS", default=3, minimum=1),
         tavily_max_results=_read_int_env("TAVILY_MAX_RESULTS", default=5, minimum=1),
         log_level=os.getenv("LOG_LEVEL", "INFO").upper(),
