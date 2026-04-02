@@ -7,7 +7,7 @@ To build a stateful, production-ready AI Agent using **LangGraph** and **Pydanti
 * **Package Manager:** `uv` (for speed and environment locking)
 * **Orchestration:** `langgraph` (State Machine logic)
 * **Logic & Validation:** `pydantic` and `pydantic-ai`
-* **Model:** Google Gemini (`gemini-1.5-pro` or `gemini-1.5-flash`)
+* **Model:** Google Gemini (`gemini-2.5-flash`)
 * **Search Tool:** Tavily API
 
 ## 3. Architecture: The State Machine

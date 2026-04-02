@@ -83,7 +83,7 @@ make eval
 ## Key Conventions
 
 - **Package manager**: `uv` exclusively — use `uv run` prefix for all commands, not bare `python` or `pip`
-- **LLM model**: Google Gemini via `langchain-google-genai`; model name defined in `config.py`
+- **LLM model**: Google Gemini (`gemini-2.5-flash`) via `langchain-google-genai`; model name defined in `config.py`
 - **Structured output**: `pydantic-ai` is used for the Critic's structured response — define the output shape as a Pydantic model, not a raw prompt parse
 - **Loop guard**: `iteration_count` caps retries at 3; the conditional edge must check this before routing back to the researcher
 - **Logging**: Print the active node name to stdout at the start of each node function so execution flow is visible in the terminal
