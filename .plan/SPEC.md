@@ -1,12 +1,12 @@
 # SPEC.md: Multi-Node Research & Verification Agent
 
 ## 1. Project Goal
-To build a stateful, production-ready AI Agent using **LangGraph** and **PydanticAI**. The agent must gather information via web search and undergo a formal "Critic" phase to verify facts before presenting a final report to the user.
+To build a stateful, production-ready AI Agent using **LangGraph** and **Pydantic v2**. The agent must gather information via web search and undergo a formal "Critic" phase to verify facts before presenting a final report to the user.
 
 ## 2. Technical Stack
 * **Package Manager:** `uv` (for speed and environment locking)
 * **Orchestration:** `langgraph` (State Machine logic)
-* **Logic & Validation:** `pydantic` and `pydantic-ai`
+* **Logic & Validation:** `pydantic` v2 (structured LLM outputs via `model_validate()`)
 * **Model:** Google Gemini (`gemini-2.5-flash`)
 * **Search Tool:** Tavily API
 
